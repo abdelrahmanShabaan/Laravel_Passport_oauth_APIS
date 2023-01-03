@@ -1,0 +1,16 @@
+composer require laravel/passport:*
+
+step2 :
+php artisan migrate
+
+step 3 : 
+php artisan passport:install
+
+
+Encryption keys generated successfully.
+Personal access client created successfully.
+Client ID: 1
+Client secret: wXijZs89jB7JoOaR4uIRpOBr63yQxRHrfLaq3WPR
+Password grant client created successfully.
+Client ID: 2
+Client secret: cpax5uIZaFauL4syZywjMHO9KyrvdfNaQMEnznCU

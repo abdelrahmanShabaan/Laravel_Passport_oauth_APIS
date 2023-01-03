@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "76a58aeb-4ade-4aa0-b3a4-779bc1d127c4",
+		"name": "passport Collections Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23182868"
+	},
+	"item": [
+		{
+			"name": "post Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "ahmed",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ahmeds@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "ahmed1234",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "ahmed1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get oauth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "kimo@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "kimo1234",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "client -secret",
+							"value": "wXijZs89jB7JoOaR4uIRpOBr63yQxRHrfLaq3WPR",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/oauth/token",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Books get",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
